@@ -1,5 +1,5 @@
 baseURL = "https://siddheshkanawade.github.io"
-title   = "Hello Friend NG"
+title   = "Hello, Siddhesh Kanawade here"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
@@ -7,8 +7,6 @@ PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
 paginate  = 10
-rssLimit  = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
 # googleAnalytics = ""
 # disqusShortname = ""
@@ -34,10 +32,10 @@ disable404     = false
 disableHugoGeneratorInject = false
 
 [permalinks]
-  posts = "/posts/:year/:month/:title/"
+  blog = "/blog/:year/:month/:title/"
 
 [author]
-  name = "Jane Doe"
+  name = "Siddhesh Kanawade"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -55,13 +53,13 @@ disableHugoGeneratorInject = false
 
   # Metadata mostly used in document's head
   # 
-  description = "Nice theme for homepages and blogs"
+  description = "Know more about Siddhesh"
   keywords = ""
   images = [""]
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Hello Friend NG"
+  homeSubtitle = "I am a third year undergrad at IIT Gandhinagar passionate in the field of Computer Science with majors in Electrical Engineering"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -72,7 +70,7 @@ disableHugoGeneratorInject = false
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   #
-  disableReadOtherPosts = false
+  disableReadOtherPosts = true
 
   # Enable theme toggle
   # 
@@ -80,7 +78,7 @@ disableHugoGeneratorInject = false
   # Per default, this option is off. 
   # The theme is respecting the prefers-color-scheme of the operating systeme. 
   # With this option on, the page user is able to set the scheme he wants. 
-  enableThemeToggle = false
+  enableThemeToggle = true
 
   # Sharing buttons
   #
@@ -94,7 +92,7 @@ disableHugoGeneratorInject = false
   #
   # Enables the global language menu.
   #
-  enableGlobalLanguageMenu = true
+  enableGlobalLanguageMenu = false
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
@@ -110,15 +108,14 @@ disableHugoGeneratorInject = false
   # If you want, you can easily override the default footer with your own content. 
   #
   [params.footer]
-    trademark = true
-    rss = true
-    copyright = true
-    author = true
+    trademark = false
+    rss = false
+    copyright = false
+    author = false
 
     topText = []
     bottomText = [
-      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+      "Made with ❤️ by Siddhesh Kanawade"
     ]
 
   # Colors for favicons
@@ -130,7 +127,7 @@ disableHugoGeneratorInject = false
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "$ cd /home/"
+    logoText     = "Welcome/"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -158,36 +155,20 @@ disableHugoGeneratorInject = false
   #   maxWidth = "50px"
 
   # Social icons
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/"
 
   [[params.social]]
     name = "email"
-    url  = "mailto:nobody@example.com"
+    url  = "mailto:siddheshkanawade743@gmail.com"
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/"
+    url  = "https://github.com/SiddheshKanawade"
 
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/"
+    url  = "https://www.linkedin.com/in/siddhesh-kanawade-9a9950208/"
 
-  [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
 
-[languages]
-  [languages.en]
-    subtitle  = "Hello Friend NG Theme"
-    weight    = 1
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-
-  [languages.fr]
-    subtitle  = "Hello Friend NG Theme"
-    weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
   [[menu.main]]
@@ -195,6 +176,6 @@ disableHugoGeneratorInject = false
     name       = "About"
     url        = "about/"
   [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
+    identifier = "blog"
+    name       = "GSoC"
+    url        = "blog/"
